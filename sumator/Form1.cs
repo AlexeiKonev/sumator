@@ -37,7 +37,7 @@ namespace sumator
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Multiselect = true;
-            openFileDialog.Filter = "Text Files|*.txt";
+            openFileDialog.Filter = "Text Files|*.txt;*.cs";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -50,7 +50,7 @@ namespace sumator
                 }
 
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
-                saveFileDialog.Filter = "Text File|*.txt";
+                saveFileDialog.Filter = "Text File|*.txt;*.cs";
 
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
@@ -64,7 +64,7 @@ namespace sumator
         private void SplitFile()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Text File|*.txt";
+            openFileDialog.Filter = "Text Files|*.txt;*.cs";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
